@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function cap(sent) {
+            let words = sent.split(" ");
+            let sentence = [];
+            for(let i = 0; i < words.length; i++) {
+                let chars = words[i].split("");
+                chars[0] = chars[0].toUpperCase();
+                sentence.push(chars.join(""));
+            }
+            sentence = sentence.join(" ")
+
+            return sentence;
+        }
+
+        console.log(cap("The quick brown fox"));
+    </script>
+</body>
+</html>
